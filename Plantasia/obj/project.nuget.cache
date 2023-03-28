@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jyt6Beb5MUl+Dl3LAiEwqthcSHnkBDqihvgZ8A/HDRexQAS+8EEVLXIUZnY+oAjz1VgqX22d/MXnZnSsgMM+tw==",
+  "success": true,
+  "projectFilePath": "/home/cyprian/Documents/Plantasia/Plantasia/Plantasia.csproj",
+  "expectedPackageFiles": [
+    "/home/cyprian/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.3/microsoft.aspnetcore.app.ref.7.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
