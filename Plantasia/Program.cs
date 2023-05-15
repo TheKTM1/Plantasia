@@ -7,7 +7,7 @@ var connectionString = builder.Configuration.GetConnectionString("ApplicationDbC
 builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseInMemoryDatabase("MemoryDb"));
 
-builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<ApplicationDbContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -22,6 +22,40 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
+/*
+ var user = new UserModel 
+{
+UserName = "user@user.user",
+Email = "user@user.user",
+ID = Guid.NewGuid().ToString(),
+FirstName = "Norbert",
+LastName = "Gierczak",
+EmailConfirmed = true
+};
+
+var user = new UserModel 
+{
+UserName = "user@user.user",
+Email = "user@user.user",
+ID = Guid.NewGuid().ToString(),
+FirstName = "Obelix",
+LastName = "PorkEnjoyer",
+EmailConfirmed = true
+};
+
+ var user = new UserModel 
+{
+UserName = "user@user.user",
+Email = "user@user.user",
+ID = Guid.NewGuid().ToString(),
+FirstName = "Asterix",
+LastName = "W¹sacz",
+EmailConfirmed = true
+};
+
+
+ */
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
