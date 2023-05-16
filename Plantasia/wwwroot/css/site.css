@@ -23,6 +23,7 @@ body {
 
 nav {
     background-image: url(../images/banner.png);
-    height: 200px;
+    height: 175px;
+    background-position: 0 -64px;
     background-size:cover;
 }
