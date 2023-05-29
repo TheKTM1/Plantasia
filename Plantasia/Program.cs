@@ -34,7 +34,7 @@ LastName = "Gierczak",
 EmailConfirmed = true
 };
 
-var user = new UserModel 
+var user1 = new UserModel 
 {
 UserName = "user@user.user",
 Email = "user@user.user",
@@ -44,7 +44,7 @@ LastName = "PorkEnjoyer",
 EmailConfirmed = true
 };
 
- var user = new UserModel 
+ var user2 = new UserModel 
 {
 UserName = "user@user.user",
 Email = "user@user.user",
