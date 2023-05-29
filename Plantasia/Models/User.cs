@@ -1,4 +1,4 @@
-﻿namespace Plantasia.Models
+namespace Plantasia.Models
 {
     public class User
     {

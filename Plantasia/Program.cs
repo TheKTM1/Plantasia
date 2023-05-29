@@ -23,7 +23,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 
-/*
+
  var user = new UserModel 
 {
 UserName = "user@user.user",
@@ -50,12 +50,12 @@ UserName = "user@user.user",
 Email = "user@user.user",
 ID = Guid.NewGuid().ToString(),
 FirstName = "Asterix",
-LastName = "W¹sacz",
+LastName = "Blondas",
 EmailConfirmed = true
 };
 
 
- */
+ 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
