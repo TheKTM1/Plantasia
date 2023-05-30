@@ -19,6 +19,44 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         modelBuilder.Entity<Pet>().HasData(GetPets());
         base.OnModelCreating(modelBuilder);
     }
+abstract class Bug 
+    {
+        int StingPower { get; set; }
+        int HealthPoints { get; set; }
+        int Speed { get; set; }
+        bool IsAlive { get; set; }
+        bool Exoskeleton { get; set; }
+        bool Flight { get; set; }
+
+    }
+    abstract class Vegetable
+    {
+        int TheThicknessOfTheCrust { get; set; }
+        int HealthPoints { get; set; }
+        int Speed { get; set; }
+        int CrushDamage { get; set; }
+
+        bool IsAlive { get; set; }
+
+    }
+    abstract class Tomato : Vegetable
+    {
+
+    }
+    abstract class TomaTanko : Tomato
+    {
+
+    }
+    abstract class KillerBee : Bee
+    {
+
+    }
+    abstract class Bee : Bug
+    {
+
+    }
+
+
     private List<Pet> GetPets()
     {
         return Enumerable.Range(1, 10)
