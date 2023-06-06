@@ -22,6 +22,12 @@ public class HomeController : Controller
     {
         return View();
     }
+    
+    // Narazie tutaj, a ostatecznie trzeba będzie ten widok zrobić w Arei User
+    public IActionResult PetPreview()
+    {
+        return View();
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
