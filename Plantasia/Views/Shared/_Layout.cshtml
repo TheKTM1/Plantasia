@@ -32,10 +32,37 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+    <div class="d-inline-flex vw-100">
+
+        <div class="container bg-black" style="width:200px;text-align:center">
+            <div>
+                <h4 class="d-block">Gracz</h4>
+                <a class="d-block">Profil</a>
+                <a class="d-block">Ustawienia</a>
+                <a class="d-block">Znajomi</a>
+                <a class="d-block">Shoutbox</a>
+                <a class="d-block">Poczta</a>
+            </div>
+            <div>
+                <h4 class="d-block">Hodowla</h4>
+                <a class="d-block">Przegląd</a>
+                <a class="d-block">Rynek</a>
+                <a class="d-block">Bank</a>
+            </div>
+            <div>
+                <h4 class="d-block">Eksploracja</h4>
+                <a class="d-block">Wyprawa</a>
+                <a class="d-block">Pojedynek</a>
+                <a class="d-block">Historia walk</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
     </div>
 
     <footer class="border-top footer text-muted">
